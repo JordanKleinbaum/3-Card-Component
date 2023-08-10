@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  grid-template-rows: 530px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.card img {
+  width: 60px;
+  margin-bottom: 30px;
+}
+.card .title {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.card p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 30px;
+  margin-bottom: 75px;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card1 button {
+  color: hsl(31, 77%, 52%);
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.card1 button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 2px solid white;
+}
+.card1 p {
+  width: 220px;
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card2 button {
+  color: hsl(184, 100%, 22%);
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.card2 button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: 2px solid white;
+}
+.card2 p {
+  width: 226px;
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card3 button {
+  color: hsl(179, 100%, 13%);
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.card3 button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border: 2px solid white;
+}
+
+@media (width <= 990px) {
+  body {
+    padding: 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .card1 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  .card3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
